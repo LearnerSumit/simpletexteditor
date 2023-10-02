@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <button id="file_download_button"><i class="ri-download-line"></i></button>
+        <div id="top">
+            <div id="font-size">
+                <input id="import-text-file" type="file" accept=".txt">
+                <input id="font_size_changer" type="number" min="1" max="100" value="14">
+            </div>
+            <div id="right">
+                <i class="ri-bold"></i>
+                <i class="ri-italic"></i>
+                <i class="ri-underline"></i>
+            </div>
+            <div id="left">
+                <i class="ri-align-left"></i>
+                <i class="ri-align-center"></i>
+                <i class="ri-align-right"></i>
+            </div>
+            <div id="text-color">
+                <i class="ri-font-size"></i>
+                <i class="ri-format-clear"></i>
+                <input type="color" value="#000000">
+            </div>
+        </div>
+        <div id="text-porstion">
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
